@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #000;
+  margin: 10px;
+  padding: 10px;
+}
+
+.header h1 {
+  color: #000;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.badge {
+  margin-left: 5px;
+  background-color: red;
+  padding: 3px 6px;
+  border-radius: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: inherit;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 200ms linear;
+  border: 2px solid #000;
+  font-size: 14px;
+}
+
+.menu li a.full {
+  border-color: red;
+}
+
+.menu li a:hover,
+.menu li a.active {
+  color: #000;
+  background-color: #fff;
+}
